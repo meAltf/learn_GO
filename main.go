@@ -6,4 +6,5 @@ import "fmt"
 
 func main() {
 	fmt.Println("Learning GO language | Yooo Robert!")
+	fmt.Println("____________________________________")
 }
