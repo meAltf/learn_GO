@@ -8,4 +8,5 @@ func PrintMessage(message string) {
 
 func JustPrint() {
 	fmt.Println("Just trying to printSomething in main.go !")
+	fmt.Println("____________________________________")
 }

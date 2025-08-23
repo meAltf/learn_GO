@@ -34,6 +34,7 @@ func Variables() {
 	var Public = "starting with an uppercase letter is public (exported) — it can be used from another package."
 	var private = "starting with a lowercase letter is private (unexported) — it cannot be accessed outside its package."
 
+	fmt.Println("____________________________________")
 	fmt.Println(Public)
 	fmt.Println(private)
 
