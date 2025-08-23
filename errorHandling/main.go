@@ -17,6 +17,14 @@ func divideNumSkipError(a, b float64) (float64, error) {
 	return a / b, nil
 }
 
+// return error as string | Not good practice
+func divideNum2(a, b float64) (float64, string) {
+	if b == 0 {
+		return 0, "denominator must not ve zero"
+	}
+	return a / b, "nil"
+}
+
 func main() {
 
 	fmt.Println("Learning error handling in function and understnd underscore identifies uses")
@@ -31,5 +39,10 @@ func main() {
 	fmt.Println("____________________________________________________________________________________")
 	result2, _ := divideNumSkipError(56, 0)
 	fmt.Println("The final result after skipping the error:", result2)
+
+	// return error as string | Not good practice
+	fmt.Println("____________________________________________________________________________________")
+	result3, _ := divideNum2(4, 0)
+	fmt.Println("The sum:", result3)
 
 }
