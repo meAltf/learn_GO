@@ -14,4 +14,7 @@ func main() {
 	// Calling from another package
 	myutil.PrintMessage("Hello from myutil directory..")
 	myutil.JustPrint()
+
+	// Variables
+	myutil.Variables()
 }
